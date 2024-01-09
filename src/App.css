@@ -114,6 +114,8 @@ main {
 
 .tech {
   display: grid;
+
+  gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   flex-direction: row;
@@ -123,6 +125,7 @@ main {
 }
 
 .logo {
+  margin-top: 10px;
   width: 100px;
   display: flex;
   justify-content: flex-start;
