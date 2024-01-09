@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 5%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+/*NAV*/
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  margin-top: 2%;
+  padding: 3%;
+}
+
+nav h3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.links a {
+  background: transparent;
+}
+
+.button {
+  --bg: #000;
+  --hover-bg: #90e5ff;
+  --hover-text: #000;
+  color: black;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+/*HEADER*/
+
+header {
+  margin-left: 2%;
+}
+
+header h1 {
+  display: flex;
+  justify-content: left;
+  margin-top: 5%;
+}
+
+header h2 {
+  display: flex;
+  justify-content: left;
+}
+
+.image {
+  display: flex;
+  margin-left: 25%;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+/*MAIN*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catchphrase {
+  display: flex;
+  flex-direction: row;
+  margin: 3em;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.tech {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  flex-direction: row;
+  margin-bottom: 2em;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.logo {
+  width: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mainProject {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15em;
+  grid-row-gap: 4em;
+}
+
+.mainProject div h2 a {
+  color: black;
+}
+
+.mainProject div {
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
